@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elamel Lab</title>
+</head>
+<body>
+    <div class="crud">
+<div class="mama2">
+        <h1 id="daty"></h1>
+        <h1 id="datyy"></h1>
+        </div>
+        <div class="head">
+            <h2>Elamel Lab Store Manger</h2>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Product" id="title">
+            <input type="text" placeholder="Company" id="company">
+            <div class="price">
+                <input type="number" placeholder="price" id="price">
+                <input type="text" placeholder="EX. date" id="taxes">
+                <input type="number" placeholder="Stock" id="ads">
+                <input type="number" placeholder="Consum" id="discount">
+            </div>
+            <button id="submit">Create New Product</button>
+        </div>
+        <div id="outputs">
+            <div class="search">
+
+                <input type="text" onkeyup="searchData(this.value)" id="search" placeholder="search">
+                <div class="btnsearch">
+                    <center>
+                    <button onclick="getSearchMood(this.id)" id="searchTitle">
+                        search By Title
+                    </button>
+                    <button onclick="getSearchMood(this.id)" id="searchex">
+                        search By Ex.D.
+                    </button>
+                    </center>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>price</th>
+                    <th>Ex. date</th>
+                    <th>Rest</th>
+                    <th>Update</th>
+                    <th>Delet</th>
+                </tr>
+                <tbody id="tbody">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="delet">Delet</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="main.js"></script>   
+</body>
+</html>
